@@ -91,7 +91,7 @@ class APP_MATCHER(Dataset):
         with open('labels.json') as fr:
             labels = json.load(fr)
 
-        final_detections.sort(key= lambda x: x['detection_id'])
+        # final_detections.sort(key= lambda x: x['detection_id'])
         data = []
         targets = []
         for i in len(final_detections):
